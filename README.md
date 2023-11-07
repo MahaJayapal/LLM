@@ -6,7 +6,7 @@
 
 ##### Requirements
 
-- A jupyter notebook with T4 GPU
+- A colab jupyter notebook with T4 GPU
 
 - Getting approval for using Llama 2
 
@@ -50,7 +50,7 @@ Large language models (LLM), such as Llama and GPT, are typically trained on bro
 
 ##### Requirements
 
-- A jupyter notebook with T4 GPU
+- A colab jupyter notebook with T4 GPU
 - Access to the Hugging Face hub to push and pull models and data.
 
 Functionality:
