@@ -12,27 +12,26 @@
 
   - Step 1: Fill in the Llama 2 access request form
 
-Fill in the [Llama access request form](https://ai.meta.com/resources/models-and-libraries/llama-downloads/). You will need the Llama 2 & Llama Chat model but it doesn’t hurt to get others in one go. You will have to use the email address associated with your HuggingFace account. Typically, you will receive the approval email within an hour.
+    Fill in the [Llama access request form](https://ai.meta.com/resources/models-and-libraries/llama-downloads/). You will need the Llama 2 & Llama Chat model but it            doesn’t hurt to get others in one go. You will have to use the email address associated with your HuggingFace account. Typically, you will receive the approval email         within an hour.
 
   - Step 2: Request access to the Llama 2 model
 
-Visit the [Llama 2 13B Chat model](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf) page.You should see another request form for downloading the model.
+    Visit the [Llama 2 13B Chat model](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf) page.You should see another request form for downloading the model.
 
 - Using RAG with Llama 2
 
-There are three strings to be replaced in the notebook in order to run.
+  There are three strings to be replaced in the notebook in order to run.
 
-- PINECONE\_API\_KEY: Pinecone API Key
-- PINECONE\_ENV: The environment associated with the API key
-- HF\_AUTH\_TOKEN: Hugging Face authorization token
+  - PINECONE\_API\_KEY: Pinecone API Key
+  - PINECONE\_ENV: The environment associated with the API key
+  - HF\_AUTH\_TOKEN: Hugging Face authorization token
 
-
-Pinecone API Key: Go to [Pinecone](https://app.pinecone.io/) and create a free account if you don’t have one. After signing in, click API Keys on the right panel. It should show your API keys. You can use the default one or create a new one.
-
-Pinecone environment: Copy the Pinecone environment PINECONE\_ENV under the Environment header.
-
-Hugging Face authorization token: Go to the [Access token](https://huggingface.co/settings/tokens) page. Create a new one or use an old one.
-
+  Pinecone API Key: Go to [Pinecone](https://app.pinecone.io/) and create a free account if you don’t have one. After signing in, click API Keys on the right panel. It        should show your API keys. You can use the default one or create a new one.
+  
+  Pinecone environment: Copy the Pinecone environment PINECONE\_ENV under the Environment header.
+  
+  Hugging Face authorization token: Go to the [Access token](https://huggingface.co/settings/tokens) page. Create a new one or use an old one.
+  
 ##### Functionality
 
 Large language models (LLM), such as Llama and GPT, are typically trained on broad datasets. They are not good at special domain knowledge. Instead of training a new model, using Retrieval-Augmented Generation (RAG) is a quick and cheap way to achieve a similar purpose.
