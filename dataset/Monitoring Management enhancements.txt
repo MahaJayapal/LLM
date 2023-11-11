@@ -1,0 +1,25 @@
+Release-notes: week-of-september-29-2023
+Monitoring Management enhancements
+Generate alert for the resources with unknown availability state
+A client-level critical alert will be generated every 30 minutes if a resource availability state changes to the UNKNOWN state.
+
+The critical alert contains the link to the list of resources that have no monitoring data for the last 30 minutes. When you click the link, the Infrastructure > Resources page is displayed with the list of affected resources.
+
+The alert is auto healed when all the resources in the alert move out of the UNKNOWN state.
+
+See Resource Availability for more details.
+
+Incorrect configuration parameters reflected on the existing templates
+The following are the resolved configuration parameter-related issues that arise when making modifications to the templates:
+
+Add a new monitor with configuration parameters to the existing template:
+
+When you add a new monitor with configuration parameters to the existing template, the new parameters are pushed to all the resources associated with the template. Prior to this, the newly added parameters were not pushed to the resources.
+
+Removing an existing monitor and adding a new monitor with configuration parameters to the template:
+
+When you remove an existing monitor from the template and add a new monitor with configuration parameters, the old configurations are removed from all the resources associated with that template and the new configuration parameters will be pushed. Prior to this, the newly added parameters were not pushed to the resources.
+
+Device management policy view template configuration parameters:
+
+When you remove the existing monitor from the template, the configuration parameters for that monitor will be removed from the device management policy view page. Prior to this, the device management view page still showed the configuration parameter from the removed monitor

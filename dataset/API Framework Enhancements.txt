@@ -1,0 +1,5 @@
+Release-notes: week-of-september-29-2023
+API Framework Enhancements
+API updates
+APIs to search and assign templates have been updated to support additional SaaS Application collector type. See API documentation for more information.
+APIs to manage templates have been updated to support the additional ChangeDetection and Forecast threshold types. See API documentation for more information.
