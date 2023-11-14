@@ -1,0 +1,7 @@
+Metrics Engine Enhancements
+Metric Name length limit increased
+The metric name size has been increased to 255 characters, and you can now utilize up to 10 underscores within this limit. Previously, only 100 characters were permitted with a maximum of 5 underscores.
+
+With this extended limit, you can now create more descriptive metric names that accommodate various makes, models, and version details.
+
+See Metric Name format for more details.
